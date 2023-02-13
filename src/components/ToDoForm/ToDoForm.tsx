@@ -6,7 +6,7 @@ const ToDoForm = (): JSX.Element => {
       <label htmlFor="id" aria-label="id" className="form-tasks__label-id">
         ID
       </label>
-      <input type="text" className="form-tasks__id" />
+      <input type="text" className="form-tasks__id" required />
       <label
         htmlFor="name"
         aria-label="name"
@@ -14,7 +14,7 @@ const ToDoForm = (): JSX.Element => {
       >
         Name
       </label>
-      <input type="text" className="form-tasks__name" />
+      <input type="text" className="form-tasks__name" required />
       <label
         htmlFor="status"
         aria-label="task status"
@@ -22,7 +22,7 @@ const ToDoForm = (): JSX.Element => {
       >
         Status
       </label>
-      <input type="text" className="form-tasks__isDone" />
+      <input type="text" className="form-tasks__isDone" required />
       <button type="submit" className="form-tasks__button">
         Create task
       </button>
