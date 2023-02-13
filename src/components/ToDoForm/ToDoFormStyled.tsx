@@ -11,6 +11,7 @@ const ToDoFormStyled = styled.form`
     border: 2px solid black;
     height: 35px;
     width: 350px;
+    padding-left: 6px;
   }
 
   .form-tasks {
