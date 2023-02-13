@@ -1,7 +1,7 @@
 import "./App.css";
 
-function App() {
-  return <div className="App"></div>;
-}
+const app = () => {
+  return <div className="app"></div>;
+};
 
-export default App;
+export default app;
