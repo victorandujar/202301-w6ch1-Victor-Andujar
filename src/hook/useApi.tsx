@@ -7,7 +7,7 @@ const useApi = () => {
   const dispatch = useAppDispatch();
 
   const getToDo = useCallback(async () => {
-    const response = await fetch(process.env.REACT_URL_API!);
+    const response = await fetch("http://localhost:3004/todo/");
 
     const taskToDo = (await response.json()) as ToDosStructure[];
 

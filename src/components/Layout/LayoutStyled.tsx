@@ -5,7 +5,7 @@ const LayoutStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 80px;
   font-family: monospace;
   padding: 20px 0;
   min-height: 100%;
