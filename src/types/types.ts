@@ -1,7 +1,11 @@
+export interface ToDosStructure {
+  todos: ToDoStructure[];
+}
+
 interface ToDoStructure {
   id: number;
   name: string;
   isDone: boolean;
 }
 
-export default ToDoStructure;
+export default ToDosStructure;
