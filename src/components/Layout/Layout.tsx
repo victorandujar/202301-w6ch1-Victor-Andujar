@@ -1,4 +1,4 @@
-import Task from "../Task/Task";
+import TaskList from "../TaskList/TaskList";
 import ToDoForm from "../ToDoForm/ToDoForm";
 import LayoutStyled from "./LayoutStyled";
 
@@ -9,7 +9,7 @@ const Layout = (): JSX.Element => {
         <h1>To Do tasks</h1>
       </header>
       <ToDoForm />
-      <Task />
+      <TaskList />
     </LayoutStyled>
   );
 };

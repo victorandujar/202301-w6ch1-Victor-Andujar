@@ -7,16 +7,12 @@ const TaskStyled = styled.div`
   border-bottom: 1px solid black;
   padding: 5px 0;
 
-  .task {
-    &__toggle-button {
-      background: none;
-      border: none;
-    }
-
-    &__delete-button {
-      background: none;
-      border: none;
-    }
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
   }
 `;
 
