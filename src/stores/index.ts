@@ -1,7 +1,7 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import { toDoReducer } from "./features/ToDoSlice";
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     toDoTasks: toDoReducer,
   },
@@ -15,3 +15,5 @@ export type AppThunk<ReturnType = void> = ThunkAction<
   unknown,
   Action<string>
 >;
+
+export default store;

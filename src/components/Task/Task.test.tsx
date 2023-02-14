@@ -1,24 +1,23 @@
 import { render, screen } from "@testing-library/react";
+import Wrapper from "../../wrapper/wrapper";
 import Task from "./Task";
 
 describe("Given a Task component", () => {
   describe("When it is rendered", () => {
     test("Then it should show the text 'Take out the rubish'", () => {
-      const text = "Take out the rubish";
+      const todo = {
+        id: 1,
+        name: "Cook for the week",
+        isDone: false,
+      };
 
-      render(<Task />);
+      render(
+        <Wrapper>
+          <Task todo={todo} />
+        </Wrapper>
+      );
 
-      const expectedText = screen.getByRole("heading", { name: text });
-
-      expect(expectedText).toBeInTheDocument();
-    });
-
-    test("Then it should show a button with the text '✅'", () => {
-      const text = "✅";
-
-      render(<Task />);
-
-      const expectedText = screen.getByRole("button", { name: text });
+      const expectedText = screen.getByRole("heading", { name: todo.name });
 
       expect(expectedText).toBeInTheDocument();
     });

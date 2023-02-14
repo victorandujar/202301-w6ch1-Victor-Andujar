@@ -35,7 +35,7 @@
 - Shows the name of the task.
 - Shows the button to delete a task.
 - Shows the ✅ icon to mark as done task
-- Shows the ❌ icon to mark as not done task.
+- Shows the ☑️ icon to mark as not done task.
 - Shows the 🗑️ icon to delete the task.
 - Receives a task.
 - Receives the delete function.
