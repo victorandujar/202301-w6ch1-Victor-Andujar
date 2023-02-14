@@ -14,8 +14,8 @@ describe("Given a ToDoForm component", () => {
     });
   });
 
-  test("Then it should show a button with the text 'Create task'", () => {
-    const buttonText = "Create task";
+  test("Then it should show a button with the text 'Add task'", () => {
+    const buttonText = "Add task";
 
     render(<ToDoForm />);
 

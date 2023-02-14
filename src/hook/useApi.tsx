@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { loadToDoActioCreator } from "../stores/features/ToDoSlice";
+import { loadToDoActionCreator } from "../stores/features/ToDoSlice";
 import { useAppDispatch } from "../stores/hooks";
 import ToDoStructure from "../types/types";
 
@@ -11,7 +11,7 @@ const useApi = () => {
 
     const taskToDo = (await response.json()) as ToDoStructure[];
 
-    dispatch(loadToDoActioCreator(taskToDo));
+    dispatch(loadToDoActionCreator(taskToDo));
   }, [dispatch]);
 
   return { getToDo };
