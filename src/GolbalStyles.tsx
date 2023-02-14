@@ -11,13 +11,10 @@ const GlobalStyles = createGlobalStyle`
   text-decoration: none;
   }
 
-
-
 body {
   padding: 20px;
   background-color: #fff;
-  font-family: "Inter", sans-serif;
-  width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
   
 }
