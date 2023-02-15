@@ -7,7 +7,7 @@ const useApi = () => {
   const dispatch = useAppDispatch();
 
   const getToDo = useCallback(async () => {
-    const response = await fetch("http://localhost:3001/todo/");
+    const response = await fetch("https://todo-api-rest.onrender.com/todo");
 
     const taskToDo = (await response.json()) as ToDosStructure;
 
